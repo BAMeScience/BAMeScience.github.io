@@ -35,20 +35,6 @@ description:
 	</div>
 </section>
 
-<section class="testimonial">
-	<div class="container">
-		<h2>Latest updates</h2>
-		<div class="cards">
-			{% for post in site.posts limit:3 %}
-				<a class="card" href="{% include relative-src.html src=post.url %}">
-					<div class="card-title">{{ post.title }}</div>
-					<p class="card-text">{{ post.date | date: "%B %d, %Y" }} · {{ post.excerpt | strip_html | strip_newlines | truncate: 140 }}</p>
-				</a>
-			{% endfor %}
-		</div>
-	</div>
-</section>
-
 <section class="bottom-cta">
 	<div class="container">
 		<h2>Work with us</h2>
