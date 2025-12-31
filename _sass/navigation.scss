@@ -39,8 +39,8 @@
 	}
 
 	a.active {
-		color: $text-color;
-		background: rgba(200, 55, 55, 0.10);
+		color: $muted-text-color;
+		background: transparent;
 	}
 
 	.nav-toggle {

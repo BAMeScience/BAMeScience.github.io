@@ -68,7 +68,7 @@ header {
 
 .content {
 	background: transparent;
-	padding: 24px 0 0 0;
+	padding: 0;
 	position: relative;
 }
 
@@ -152,6 +152,31 @@ blockquote:before {
 .page {
 	margin-bottom: 0;
 	padding-bottom: 64px;
+}
+
+.page-hero {
+	color: #fff;
+	background:
+		radial-gradient(900px 340px at 18% 0%, rgba(200, 55, 55, 0.40), rgba(200, 55, 55, 0)),
+		linear-gradient(135deg, $brand-color 0%, $secondary-brand-color 100%);
+	padding: 54px 0 44px 0;
+
+	h1 {
+		color: #fff;
+		margin: 0;
+		text-align: left;
+	}
+
+	.subtext {
+		margin: 14px 0 0 0;
+		text-align: left;
+		max-width: 70ch;
+		color: rgba(255, 255, 255, 0.86);
+	}
+}
+
+.page {
+	padding-top: 56px;
 }
 
 .center-text {
