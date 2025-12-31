@@ -21,13 +21,16 @@
 		{% endif %}
 	</head>
 	<body>
+		<a class="skip-link" href="#content">Skip to content</a>
 		<header>
 			<div class="container">
-				<div class="company-name"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo.svg" alt="eScience logo" width="170" height="80" /></a></div>
+				<div class="company-name"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo.svg" alt="BAM eScience" width="170" height="44" /></a></div>
 				{% include navigation.html %}
 			</div>
 		</header>
-		{{ content }}
+		<main id="content" class="site-main">
+			{{ content }}
+		</main>
 		<footer>
 			<div class="container">
 				<div class="footer-columns">
@@ -43,14 +46,38 @@
 					</ul>
 					{% endfor %}
 				</div>
-				<p class="copyright"> Personal blog by Thilo Muth.</p>
+				<p class="copyright">&copy; {{ site.time | date: "%Y" }} BAM eScience Group</p>
 			</div>
 		</footer>
 		<script>
-			document.getElementById("open-nav").onclick = function () {
-				document.body.classList.toggle("nav-open");
-				return false;
-			};
+			(function () {
+				var toggle = document.getElementById("open-nav");
+				if (!toggle) return;
+
+				function setExpanded(isOpen) {
+					toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+				}
+
+				toggle.addEventListener("click", function () {
+					var isOpen = document.body.classList.toggle("nav-open");
+					setExpanded(isOpen);
+				});
+
+				document.addEventListener("keydown", function (event) {
+					if (event.key !== "Escape") return;
+					if (!document.body.classList.contains("nav-open")) return;
+					document.body.classList.remove("nav-open");
+					setExpanded(false);
+				});
+
+				document.addEventListener("click", function (event) {
+					if (!document.body.classList.contains("nav-open")) return;
+					if (!event.target.closest) return;
+					if (event.target.closest("nav.site-nav")) return;
+					document.body.classList.remove("nav-open");
+					setExpanded(false);
+				});
+			})();
 		</script>
 	</body>
 </html>

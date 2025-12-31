@@ -1,86 +1,82 @@
-.nav-open nav {
-	border-bottom: 1px dotted rgba(255, 255, 255, .2);
-	padding: 10px 0;
-	a {
-		display: block;
-	}
-
-	@media #{$mid-point} {
-		border: 0;
-		padding: 0 20px;
-
-		a {
-			display: inline;
-		}
-	}
-}
-
-nav {
-	text-transform: uppercase;
-	font-size: 1.2em;
-	width: 100%;
+.site-nav {
+	font-size: 1rem;
+	width: auto;
+	position: relative;
 
 	@media #{$mid-point} {
 		text-align: right;
-		position: absolute;
-		top: 13px;
-		right: 0;
-		padding: 0 20px;
 	}
 
-
 	a {
-		margin: 0 3px;
-		padding: 20px 10px;
-		border-bottom: 1px solid rgba(255,255,255,0);
-		color: rgba(255,255,255,.8);
-		transition: .2s ease-in-out;
+		margin: 0 4px;
+		padding: 10px 10px;
+		border-radius: 10px;
+		color: $muted-text-color;
+		transition: 0.18s ease;
 		display: none;
 
 		@media #{$mid-point} {
 			display: inline;
-			padding: 10px;
 		}
 
-
-		&.nav-toggle {
-			display: inline;
-			position: absolute;
-			right: 10px;
-			top: -22px;
-			font-size: 1.9em;
-			border: 0;
-
-			@media #{$mid-point} {
-				display: none;
-			}
-
-			&:hover {
-				border: 0;
-			}
+		&:hover {
+			background: rgba(15, 23, 42, 0.06);
+			color: $text-color;
+			text-decoration: none;
 		}
-	}
-
-	a:hover {
-
-		border-bottom: 1px solid rgba(255,255,255,.3);
-		color: #fff;
 	}
 
 	@media #{$mid-point} {
 		a.highlight {
-			border: 1px #ccc solid;
-			border-radius: 5px;
+			border: 1px solid $border-color;
+			background: $surface-color;
 
 			&:hover {
-				background: #fff;
-				color: $brand-color;
+				border-color: rgba(200, 55, 55, 0.35);
+				color: $accent-color;
 			}
 		}
 	}
 
 	a.active {
-		color: #fff;
+		display: inline;
+		color: $text-color;
+		background: rgba(200, 55, 55, 0.10);
 	}
 
+	.nav-toggle {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 42px;
+		height: 42px;
+		border-radius: 12px;
+		border: 1px solid $border-color;
+		background: $surface-color;
+		color: $text-color;
+		cursor: pointer;
+		font-size: 1.25rem;
+		padding: 0;
+
+		@media #{$mid-point} {
+			display: none;
+		}
+	}
+}
+
+.nav-open .site-nav {
+	@media (max-width: 619px) {
+		width: 100%;
+		margin-top: 10px;
+		padding: 10px;
+		background: rgba(255, 255, 255, 0.75);
+		border: 1px solid $border-color;
+		border-radius: 16px;
+
+		a {
+			display: block;
+			padding: 12px 12px;
+			margin: 4px 0;
+		}
+	}
 }

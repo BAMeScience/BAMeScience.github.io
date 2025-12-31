@@ -1,38 +1,44 @@
 .activities-content {
 	padding: 0;
-	list-style: none;
-	@extend %flexbox;
-	@include flex-flow(wrap);
 
 	.graphical-abstract {
-		width: 50%;
-		margin: auto;
+		width: 100%;
+		max-width: 760px;
+		margin: 18px auto;
 		display: block;
+
+		img {
+			border-radius: 18px;
+			border: 1px solid $border-color;
+			box-shadow: $shadow-sm;
+		}
 	}
 
 	.activity {
 		text-indent: 10px;
-		font-size: 1.3em;
+		font-size: 1rem;
 		margin-top: 20px;
-		color: #666;
+		color: $muted-text-color;
 		text-align: left;
 	}
 
 	.activities-body {
-		font-size: 1.1em;
+		max-width: 900px;
+		margin: 0 auto;
+		font-size: 1rem;
 		margin-top: 20px;
-		color: #666;
+		color: $muted-text-color;
 		text-align: left;
 	}
 
 	.activities-list {
-		font-size: 1em;
-		margin-top: 20px;
-		color: #666;
+		font-size: 1rem;
+		margin-top: 12px;
+		color: $muted-text-color;
 		text-align: left;
 	}
 
 	.h3 {
-		color: rgb(0, 0, 0);
+		color: $text-color;
 	}
 }

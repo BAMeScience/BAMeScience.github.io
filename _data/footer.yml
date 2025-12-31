@@ -1,0 +1,19 @@
+- links:
+  - name: Team
+    link: /team/
+  - name: Activities
+    link: /activities/
+  - name: Publications
+    link: /publications/
+  - name: Contact
+    link: /contact/
+- links:
+  - name: GitHub
+    link: https://github.com/BAMeScience
+    new_window: true
+    social_icon: GitHub
+  - name: RSS
+    link: /feed.xml
+    social_icon: RSS
+  - name: Legal notice
+    link: /legal/

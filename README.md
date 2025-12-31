@@ -17,7 +17,7 @@ bundle install
 
 Then, execute:
 ```sh
-bundle exect jekyll serve
+bundle exec jekyll serve
 ```
 
 to run the local server. The terminal will show the localhost where the web is deployed:
@@ -36,5 +36,5 @@ Configuration file: /home/<user-directory>/BAMeScience.github.io/_config.yml
 
 Click on the server address to visualize the website. You can add the option `--livereload` to serve to automatically refresh the page with each change you make to the source files:
 ```sh
-bundle exect jekyll serve --livereload
+bundle exec jekyll serve --livereload
 ```

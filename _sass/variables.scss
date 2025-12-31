@@ -1,6 +1,19 @@
-$brand-color: #2b2b40;
-$secondary-brand-color: #2b2b40;
-$middle-gradient-color: mix($brand-color, $secondary-brand-color, 95%);
+$brand-color: #0b1220;
+$secondary-brand-color: #111b2e;
+$accent-color: #c83737;
+
+$background-color: #f6f7fb;
+$surface-color: #ffffff;
+$surface-muted: #eef2f6;
+
+$text-color: #0f172a;
+$muted-text-color: #475569;
+$border-color: rgba(15, 23, 42, 0.12);
+
+$shadow-sm: 0 6px 16px rgba(15, 23, 42, 0.08);
+$shadow-md: 0 14px 38px rgba(15, 23, 42, 0.12);
+
+$middle-gradient-color: mix($brand-color, $secondary-brand-color, 85%);
 
 // Breakpoints
 $tablet: "(min-width: 450px)";

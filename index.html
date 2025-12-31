@@ -3,20 +3,56 @@ title: BAM eScience Group
 description: 
 ---
 <section class="hero">
-	<div class="text-container">
-		<h1 class="editable">
-			Welcome to the <strong>BAM eScience</strong> blog!
-			<br><br>
-			We are an interdisciplinary and international group interested in using computational tools for advancing materials research and analytical chemistry
-			<br><br>
-		</h1>
-		<!-- <div> -->
-		<!-- 	<img src="/images/posts/Group_picture_eScience.jpg" alt="Group picture" /> -->
-		<!-- </div> -->
+	<img class="hero-bg" src="{{ site.baseurl }}/images/posts/Group_picture_eScience.jpg" alt="" aria-hidden="true">
+	<div class="container hero-inner">
+		<p class="kicker">BAM eScience Group</p>
+		<h1>Computational tools for modern materials research and analytical chemistry.</h1>
+		<p class="lead">We are an interdisciplinary and international team working at the intersection of data science, software engineering, and domain expertise.</p>
+		<div class="hero-actions">
+			<div class="button primary"><a href="{{ site.baseurl }}/team/">Meet the team</a></div>
+			<div class="button alt"><a href="{{ site.baseurl }}/activities/">Explore our activities</a></div>
+		</div>
 	</div>
 </section>
 
-	<section class="bottom-cta">
-		<div class="button alt"><a href="{{ site.baseurl }}/contact/">Work with us</a></div>
-	</section>
-</div>
+<section>
+	<div class="container">
+		<h2>What you’ll find here</h2>
+		<div class="cards">
+			<a class="card" href="{{ site.baseurl }}/activities/">
+				<div class="card-title">Activities</div>
+				<p class="card-text">Research directions, methods, and projects we’re working on.</p>
+			</a>
+			<a class="card" href="{{ site.baseurl }}/publications/">
+				<div class="card-title">Publications</div>
+				<p class="card-text">Recent preprints and peer-reviewed work from the group.</p>
+			</a>
+			<a class="card" href="{{ site.baseurl }}/team/">
+				<div class="card-title">Team</div>
+				<p class="card-text">Meet the people behind the work and learn about our backgrounds.</p>
+			</a>
+		</div>
+	</div>
+</section>
+
+<section class="testimonial">
+	<div class="container">
+		<h2>Latest updates</h2>
+		<div class="cards">
+			{% for post in site.posts limit:3 %}
+				<a class="card" href="{% include relative-src.html src=post.url %}">
+					<div class="card-title">{{ post.title }}</div>
+					<p class="card-text">{{ post.date | date: "%B %d, %Y" }} · {{ post.excerpt | strip_html | strip_newlines | truncate: 140 }}</p>
+				</a>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+<section class="bottom-cta">
+	<div class="container">
+		<h2>Work with us</h2>
+		<p>Interested in collaborating, joining the team, or learning more about our work?</p>
+		<div class="button alt"><a href="{{ site.baseurl }}/contact/">Get in touch</a></div>
+	</div>
+</section>

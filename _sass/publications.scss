@@ -1,13 +1,20 @@
 .publication-content {
 	padding: 0;
-	list-style: none;
-	@extend %flexbox;
-	@include flex-flow(wrap);
 
 	.publication-list {
-		font-size: 1.3em;
+		max-width: 900px;
+		font-size: 1rem;
 		margin-top: 20px;
-		color: #666;
+		color: $muted-text-color;
 		text-align: left;
+
+		li {
+			background: $surface-color;
+			border: 1px solid $border-color;
+			border-radius: 16px;
+			box-shadow: $shadow-sm;
+			padding: 14px 16px;
+			margin: 12px 0;
+		}
 	}
 }

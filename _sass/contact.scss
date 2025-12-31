@@ -1,14 +1,17 @@
-// .map {
-// 	width: 100%;
-// 	margin: 100px 0;
-// 	height: 400px;
-// }
+.contact-card {
+	background: $surface-color;
+	border: 1px solid $border-color;
+	border-radius: 18px;
+	padding: 22px;
+	box-shadow: $shadow-sm;
+}
 
 .contact-box {
 	@extend %flexbox;
 	@include flex-flow(wrap);
 	max-width: 750px;
 	margin: 0 auto;
+	gap: 16px;
 
 	form {
 		width: 100%
@@ -23,10 +26,10 @@
 			-webkit-flex: 1;
 			flex: 1;
 		}
-		margin: 0 30px;
+		margin: 0;
 	}
 
 	.contact-details {
-		font-size: .9em;
+		font-size: 1rem;
 	}
 }
