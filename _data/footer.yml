@@ -12,6 +12,10 @@
     link: https://github.com/BAMeScience
     new_window: true
     social_icon: GitHub
+  - name: LinkedIn
+    link: https://www.linkedin.com/groups/9580226/
+    new_window: true
+    social_icon: LinkedIn
   - name: RSS
     link: /feed.xml
     social_icon: RSS
