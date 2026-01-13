@@ -1,29 +1,115 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 386 100" role="img" aria-labelledby="title desc">
-  <title id="title">BAM eScience</title>
-  <desc id="desc">BAM eScience wordmark with a red e mark.</desc>
-  <defs>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#c83737" />
-      <stop offset="1" stop-color="#dc2328" />
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 386 100"
+   role="img"
+   aria-labelledby="title desc"
+   version="1.1"
+   id="svg29"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview31"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="2.4492274"
+     inkscape:cx="207.82064"
+     inkscape:cy="71.451104"
+     inkscape:window-width="1918"
+     inkscape:window-height="1163"
+     inkscape:window-x="1"
+     inkscape:window-y="18"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg29" />
+  <title
+     id="title">BAM eScience</title>
+  <desc
+     id="desc">BAM eScience wordmark with a red e mark.</desc>
+  <defs
+     id="defs9">
+    <linearGradient
+       id="accent"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="1">
+      <stop
+         offset="0"
+         stop-color="#c83737"
+         id="stop4" />
+      <stop
+         offset="1"
+         stop-color="#dc2328"
+         id="stop6" />
     </linearGradient>
   </defs>
-
-  <g fill="none" fill-rule="evenodd">
-    <circle cx="50" cy="50" r="38" fill="url(#accent)" />
-    <circle cx="50" cy="50" r="38" fill="none" stroke="#0f172a" stroke-opacity="0.12" stroke-width="2" />
-    <text x="50" y="65"
-      text-anchor="middle"
-      font-family="ui-sans-serif, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial"
-      font-size="52"
-      font-weight="800"
-      fill="#ffffff">e</text>
+  <g
+     fill="none"
+     fill-rule="evenodd"
+     id="g17">
+    <circle
+       cx="50"
+       cy="50"
+       r="38"
+       fill="url(#accent)"
+       id="circle11" />
+    <circle
+       cx="50"
+       cy="50"
+       r="38"
+       fill="none"
+       stroke="#0f172a"
+       stroke-opacity="0.12"
+       stroke-width="2"
+       id="circle13" />
+    <text
+       x="50"
+       y="65"
+       text-anchor="middle"
+       font-family="ui-sans-serif, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial"
+       font-size="52"
+       font-weight="800"
+       fill="#ffffff"
+       id="text15">e</text>
   </g>
-
-  <g font-family="ui-sans-serif, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial" fill="#0b1220">
-    <text x="112" y="38" font-size="16" font-weight="750" letter-spacing="0.14em" fill="#0f172a" fill-opacity="0.62">BAM</text>
-    <text x="112" y="72" font-size="46" font-weight="800">
-      <tspan fill="#c83737">e</tspan><tspan>Science</tspan>
-    </text>
-  </g>
+  <text
+     x="112"
+     y="34"
+     font-size="16px"
+     font-weight="750"
+     letter-spacing="0.14em"
+     fill="#0f172a"
+     fill-opacity="0.62"
+     id="text19"
+     style="font-family:ui-sans-serif, system-ui, '-apple-system', 'Segoe UI', Roboto, Helvetica, Arial">BAM</text>
+  <text
+     x="112"
+     y="72"
+     font-size="46px"
+     font-weight="800"
+     id="text25"
+     style="font-family:ui-sans-serif, system-ui, '-apple-system', 'Segoe UI', Roboto, Helvetica, Arial;fill:#0b1220"><tspan
+       fill="#c83737"
+       id="tspan21">e</tspan><tspan
+       id="tspan23">Science</tspan></text>
+  <metadata
+     id="metadata848">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>BAM eScience</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
 </svg>
