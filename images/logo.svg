@@ -25,9 +25,9 @@
      showgrid="false"
      inkscape:zoom="2.4492274"
      inkscape:cx="207.82064"
-     inkscape:cy="71.451104"
+     inkscape:cy="71.451103"
      inkscape:window-width="1918"
-     inkscape:window-height="1163"
+     inkscape:window-height="1043"
      inkscape:window-x="1"
      inkscape:window-y="18"
      inkscape:window-maximized="0"
@@ -83,16 +83,6 @@
        fill="#ffffff"
        id="text15">e</text>
   </g>
-  <text
-     x="112"
-     y="34"
-     font-size="16px"
-     font-weight="750"
-     letter-spacing="0.14em"
-     fill="#0f172a"
-     fill-opacity="0.62"
-     id="text19"
-     style="font-family:ui-sans-serif, system-ui, '-apple-system', 'Segoe UI', Roboto, Helvetica, Arial">BAM</text>
   <text
      x="112"
      y="72"
